@@ -198,14 +198,6 @@ contactos.addEventListener("click", async (event) => {
                 if (result.isConfirmed) {
                     contactosGuardados = contactosGuardados.filter(c => c.tel !== telActual);
                     localStorage.setItem("contacto", JSON.stringify(contactosGuardados));
-                    Swal.fire({
-                        title: "Contacto eliminado",
-                        icon: "success",
-                        timer: 1500,
-                        showConfirmButton: false,
-                    });
-                    verAgenda();
-                    btnVer.click();
                     setTimeout(() => {
                         Toastify({
                             text: "Contacto borrado",
@@ -217,6 +209,8 @@ contactos.addEventListener("click", async (event) => {
                             },
                         }).showToast();
                     }, 200);
+                    verAgenda();
+                    btnVer.click();
                 }
             });
         }
