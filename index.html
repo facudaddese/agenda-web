@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestor de Contactos</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-    <div class="container">
+    <section class="container">
         <h1>Agenda</h1>
 
         <form id="form">
@@ -21,10 +23,12 @@
 
             <button type="submit" id="btn-guardar">Guardar</button>
             <button type="button" id="btn-ver" class="disable active">Ver agenda</button>
+            <button type="button" id="btn-deshacer" class="disable active">Deshacer</button>
         </form>
+    </section>
 
-        <ul id="contactos"></ul>
-    </div>
+    <section id="contactos" class="container-contactos">
+    </section>
 
     <footer>
         <p>Agenda desarrollada por
@@ -33,6 +37,7 @@
         </p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="js/index.js"></script>
 </body>

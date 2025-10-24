@@ -49,10 +49,13 @@ button {
     background-color: #2563eb;
     color: white;
     border: none;
-    padding: 10px;
-    border-radius: 8px;
     cursor: pointer;
-    transition: 0.2s;
+    padding: 10px 8px;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #1e40af;
 }
 
 .active {
@@ -63,34 +66,21 @@ button {
     display: none;
 }
 
-button:hover {
-    background-color: #1e40af;
-}
+/* CONTACTOS GUARDADOS */
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-li {
-    background: #e5e7eb;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 8px;
+.container-contactos {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    gap: 10px;
+    margin: 25px;
 }
 
-li p {
-    padding: 2px;
+.material-icons {
+    padding-bottom: 5px;
 }
 
-.acciones button {
-    margin-left: 5px;
-    padding: 5px 8px;
-    border-radius: 6px;
+.material-icons:hover {
+    cursor: pointer;
 }
 
 /* --- FOOTER --- */
